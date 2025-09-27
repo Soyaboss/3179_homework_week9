@@ -8,6 +8,7 @@ body {
 }
 
 #symbol_map {
-  width: 900px;   /* or match your spec width */
-  height: 500px;  /* or match your spec height */
+  width: 600px;   /* or match your spec width */
+  height: 300px;  /* or match your spec height */
 }
+
