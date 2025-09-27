@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;  /* center horizontally */
-  align-items: center;      /* center vertically */
-  height: 100vh;            /* full viewport height */
+  justify-content: center;  
+  align-items: center;     
+  height: 100vh;           
 }
 
 #symbol_map {
-  width: 600px;   /* or match your spec width */
-  height: 300px;  /* or match your spec height */
+  width: 900px;   
+  height: 600px;  
 }
+
 
