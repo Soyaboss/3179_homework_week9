@@ -14,13 +14,13 @@
 </head>
 <body>
 
-<div id="choropleth_map"></div>
+<div id="symbol_map"></div>
 
 <script type="text/javascript">
   // Use the uploaded file name, with spaces and parentheses URL-encoded
-  const specUrl = "visualization.vl%20(1).json";
+  const specUrl = "js/visualization.vl(1).json";
 
-  vegaEmbed('#choropleth_map', specUrl, { actions: false })
+  vegaEmbed('#symbol_map', specUrl, { actions: false })
     .then(result => {
       // result.view is the Vega View instance
     })
