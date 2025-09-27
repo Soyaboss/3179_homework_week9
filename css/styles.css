@@ -1,7 +1,13 @@
-#symbol_map {
-	top:1000opx;
-	bottom: 1000opx; 
-	left: 1000opx;
-	right: 1000opx;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  height: 100vh;            /* full viewport height */
+}
 
+#symbol_map {
+  width: 900px;   /* or match your spec width */
+  height: 500px;  /* or match your spec height */
 }
