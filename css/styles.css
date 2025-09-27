@@ -1,15 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;  
-  align-items: center;     
-  height: 100vh;           
+  text-align: center;   
 }
 
 #symbol_map {
-  width: 900px;   
-  height: 600px;  
+  margin: 20px auto;    
+  width: 800px;         
+  height: 450px;        
 }
-
-
