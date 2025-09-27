@@ -45,29 +45,39 @@
       }
     },
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Soyaboss/3179_homework_week9/main/data/stops_malaysia.csv",
-        "format": {"type": "csv", "parse": {"lat": "number", "lon": "number"}}
-      },
-      "mark": {
-        "type": "circle",
-        "opacity": 1,
-        "stroke": "black",
-        "strokeWidth": 0.7
-      },
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "size": {"value": 40},
-        "color": {"value": "#d62728","legend": {"title": "LRT Stations"}
-      },
-        "tooltip": [
-          {"field": "stop_name", "title": "Station"},
-          {"field": "lat", "type": "quantitative", "format": ".4f"},
-          {"field": "lon", "type": "quantitative", "format": ".4f"}
-        ]
+  "data": {
+    "url": "https://raw.githubusercontent.com/Soyaboss/3179_homework_week9/main/data/stops_malaysia.csv",
+    "format": { "type": "csv", "parse": { "lat": "number", "lon": "number" } }
+  },
+  "transform": [
+    { "calculate": "'LRT Station'", "as": "Category" }
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 1,
+    "stroke": "black",
+    "strokeWidth": 0.7
+  },
+  "encoding": {
+    "longitude": { "field": "lon", "type": "quantitative" },
+    "latitude":  { "field": "lat", "type": "quantitative" },
+    "size": { "value": 40 },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "legend": {
+        "title": "",
+        "orient": "right",
+        "labelExpr": "'LRT Station'"
       }
     },
+    "tooltip": [
+      { "field": "stop_name", "title": "Station: " },
+      { "field": "lat", "title": "Latitude: ","type": "quantitative", "format": ".4f" },
+      { "field": "lon", "title": "Longtitude: ", "type": "quantitative", "format": ".4f" }
+    ]
+  }
+},
     {
       "data": {
         "graticule": {
