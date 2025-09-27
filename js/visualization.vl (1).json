@@ -59,7 +59,8 @@
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
         "size": {"value": 40},
-        "color": {},
+        "color": {"value": "#d62728","legend": {"title": "LRT Stations"}
+      },
         "tooltip": [
           {"field": "stop_name", "title": "Station"},
           {"field": "lat", "type": "quantitative", "format": ".4f"},
