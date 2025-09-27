@@ -46,7 +46,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/Soyaboss/3179_homework_week9/refs/heads/main/stops_malaysia.csv"
+        "url": "https://raw.githubusercontent.com/Soyaboss/3179_homework_week9/refs/heads/main/data/stops_malaysia.csv"
       },
       "mark": {
         "type": "circle",
